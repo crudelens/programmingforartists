@@ -1,5 +1,5 @@
 '''
-3. class Vehicle -> constructor (brand(string) model[string] color[tuple] electric[bool]) methods (brand, model, color, electric)
+3. class Vehicle -> constructor (brand(string) model[string] color[tuple] electric[bool]) methods (brand, model, color, electric) 
 '''
 
 class Vehicle:
