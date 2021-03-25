@@ -10,6 +10,15 @@
    - If it is divisible by both 7, 5 and 3, it should return “PlongPlangPling”.
    - Otherwise, it should return the same number.
 '''
+dict1={3: "Pling", 5: "Plang", 7: "Plong"}
+def rd(userin):
+    str1=""
+    for key,value in dict1.items():
+        if userin%key==0:
+            str1+=value
+            
+    return str1
+
 def rainDrops(userin):
     if userin%3==0 and userin%5==0 and userin%7==0:
         return "PlongPlangPling"
@@ -28,7 +37,7 @@ def rainDrops(userin):
     else:
         return userin
 
-answer=rainDrops(int(input("Enter a number: ")))
+answer=rd(int(input("Enter a number: ")))
 print(answer)
     
     
